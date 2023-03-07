@@ -23,8 +23,8 @@ function Projectcard({ title, image, githublink, hostedlink }) {
                     <div className='pcardback'>
                         <h2 className='ptitle'>{title}</h2>
                         <div className="sources">
-                            <a href={`${githublink}`}> <AiFillGithub className='logos' /></a>
-                            <a href={`${hostedlink}`}><AiFillEye className='logos' /></a>
+                            <Link to={`${githublink}`}> <AiFillGithub className='logos' /></Link>
+                            <Link to={`${hostedlink}`}><AiFillEye className='logos' /></Link>
                         </div>
                     </div>
                 </FlippingCardBack>
