@@ -3,27 +3,28 @@ import './projectcard.css'
 import { FlippingCard, FlippingCardBack, FlippingCardFront } from 'react-ui-cards'
 import { AiFillEye, AiFillGithub } from 'react-icons/ai'
 import { SiGooglestreetview } from 'react-icons/si'
+import { Link } from 'react-router-dom'
 
 
 
-function Projectcard() {
+function Projectcard({ title, image, githublink, hostedlink }) {
     return (
 
         <div >
             <FlippingCard className='pcard'>
                 <FlippingCardFront  >
                     <div className='pcardfront'>
-                        <img className="thumbnail" src='https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg' alt="p-card" />
+                        <img className="thumbnail" src={image} alt="p-card" />
 
                     </div>
 
                 </FlippingCardFront>
                 <FlippingCardBack >
                     <div className='pcardback'>
-                        <h2 className='ptitle'>Project</h2>
+                        <h2 className='ptitle'>{title}</h2>
                         <div className="sources">
-                            <AiFillGithub className='logos' />
-                            <AiFillEye className='logos' />
+                            <a href={`${githublink}`}> <AiFillGithub className='logos' /></a>
+                            <a href={`${hostedlink}`}><AiFillEye className='logos' /></a>
                         </div>
                     </div>
                 </FlippingCardBack>
