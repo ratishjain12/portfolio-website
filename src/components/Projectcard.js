@@ -2,7 +2,7 @@ import React from 'react'
 import './projectcard.css'
 import { FlippingCard, FlippingCardBack, FlippingCardFront } from 'react-ui-cards'
 import { AiFillEye, AiFillGithub } from 'react-icons/ai'
-import { SiGooglestreetview } from 'react-icons/si'
+
 import { Link } from 'react-router-dom'
 
 
