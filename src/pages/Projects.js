@@ -1,7 +1,7 @@
 import { React, useEffect, useState } from 'react'
 import sanityClient from '../client';
 import Projectcard from '../components/Projectcard'
-
+import { motion } from 'framer-motion';
 import imageUrlBuilder from '@sanity/image-url'
 
 import './styles/projects.css'
@@ -22,13 +22,17 @@ function Projects() {
             image
         }`).then((data) => setProjectData(data)).catch(console.error);
     }, [])
-    console.log(projectData);
+
+
     return (
         <div className="Projects">
             <h1>Projects</h1>
-            {projectData && projectData.map((project, index) => (
-                <Projectcard title={project.title} image={urlFor(project.image)} githublink={project.githublink} hostedlink={project.hostedlink} />
-            ))}
+            <motion.div className='projectcards'>
+
+                {projectData && projectData.map((project, index) => (
+                    <Projectcard title={project.title} image={urlFor(project.image)} githublink={project.githublink} hostedlink={project.hostedlink} />
+                ))}
+            </motion.div>
 
         </div>
     )

@@ -3,8 +3,9 @@
 
 .Projects {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     background: linear-gradient(to bottom, rgb(52, 232, 158), rgb(15, 52, 67));
+
 }
 
 h1 {
@@ -14,4 +15,15 @@ h1 {
     text-align: center;
     text-decoration: underline;
     font-size: 45px;
+}
+
+.projectcards {
+    z-index: -1;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
+    align-items: center;
+
 }
