@@ -1,24 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+
 .pcard {
     width: 340px !important;
-    height: 260px !important;
+    min-height: 260px !important;
 
 
 }
 
 .pcardfront {
-    width: 340px !important;
-    height: 260px !important;
+    width: 340px;
+    height: 260px;
+    margin-bottom: 5em;
     background: radial-gradient(circle at 10% 20%, rgb(0, 0, 0) 0%, rgb(64, 64, 64) 90.2%);
-
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 
 .pcardback {
-    width: 340px !important;
-    height: 260px !important;
+    width: 340px;
+    height: 260px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     background: radial-gradient(circle at 10% 20%, rgb(0, 0, 0) 0%, rgb(64, 64, 64) 90.2%);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     display: flex;
     flex-direction: column;
     align-items: center;

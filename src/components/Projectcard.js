@@ -11,7 +11,7 @@ function Projectcard({ title, image, githublink, hostedlink }) {
     return (
 
         <div >
-            <FlippingCard className='pcard'>
+            <FlippingCard className='pcard' >
                 <FlippingCardFront  >
                     <div className='pcardfront'>
                         <img className="thumbnail" src={image} alt="p-card" />
