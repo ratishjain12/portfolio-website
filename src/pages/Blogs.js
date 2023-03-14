@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import pic from '../images/Ratish-Jain.jpeg'
 import './styles/blogs.css'
 function Blogs() {
@@ -12,7 +13,9 @@ function Blogs() {
                     on Hashnode make sure to follow me on it
                 </div>
 
-                <button className="button-54" >Hashnode</button>
+
+                <button className="button-54"> <Link to="https://devcon.hashnode.dev/" className="hashnode">Hashnode </Link></button>
+
                 <div>
 
                 </div>
